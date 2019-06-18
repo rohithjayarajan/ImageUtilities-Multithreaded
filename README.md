@@ -9,14 +9,14 @@ Image Manipulation Library which currently includes multithreaded Rotation by Ne
 
 ## Standard install via command-line
 ```
-git clone --recursive https://github.com/rohith/ImageManipulationLibrary
+git clone --recursive https://github.com/rohith/ImageUtilities-Multithreaded
 cd <path to repository>
 mkdir build
 cd build
 cmake ..
 make
 Run tests: ./test/cpp-test
-Run program: ./app/shell-app
+Run program: ./app/shell-app <PATH_TO_INPUT_IMG_DESTINATION> <PATH_TO_OUTPUT_IMG_DESTINATION>
 ```
 
 ## Building for code coverage
