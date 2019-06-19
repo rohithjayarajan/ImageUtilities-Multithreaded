@@ -41,17 +41,16 @@
  * Interpolation
  *
  */
-
-// BOOST header
+// user defined header
 #include "ImageManipulate.hpp"
 #include <cmath>
 #include <iostream>
 #include <string>
 #include <thread>
 #include <vector>
-// OpenCV header
+// BOOST header
 #include <boost/range/irange.hpp>
-// user defined header
+// OpenCV header
 #include "opencv2/opencv.hpp"
 
 ImageManipulate::ImageManipulate() {}
@@ -162,8 +161,8 @@ bool ImageManipulate::multithreadRotation() {
     }
 
     // display output image
-    // std::string displayString = "Output Image";
-    // displayImage(displayString, outputImage_m);
+    std::string displayString = "Output Image";
+    displayImage(displayString, outputImage_m);
     // write output image in user defined path
     cv::imwrite(outputImagePath_m, outputImage_m);
     return true;

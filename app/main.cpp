@@ -42,15 +42,10 @@
  *
  */
 
-#include <chrono>
-#include <ctime>
-#include <iomanip>
 #include <iostream>
 #include "ImageManipulate.hpp"
 
 int main(int argc, char *argv[]) {
-    std::clock_t c_start = std::clock();
-    auto t_start = std::chrono::high_resolution_clock::now();
     // check if correct number of arguments are provided
     if (argc == 4) {
         // create an object of ImageManipulate class
@@ -66,15 +61,5 @@ int main(int argc, char *argv[]) {
                      "$ROTATION_ANGLE_IN_RADIAN$]"
                   << std::endl;
     }
-    std::clock_t c_end = std::clock();
-    auto t_end = std::chrono::high_resolution_clock::now();
-
-    std::cout
-        << std::fixed << std::setprecision(2)
-        << "CPU time used: " << 1000.0 * (c_end - c_start) / CLOCKS_PER_SEC
-        << " ms\n"
-        << "Wall clock time passed: "
-        << std::chrono::duration<double, std::milli>(t_end - t_start).count()
-        << " ms\n";
     return 0;
 }
