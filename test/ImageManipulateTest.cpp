@@ -28,7 +28,7 @@
  *****************************************************************************/
 /**
  *  Copyright 2019 rohithjayarajan
- *  @file    getSetTest.cpp
+ *  @file    ImageManipulateTest.cpp
  *  @author  rohithjayarajan
  *  @date 06/18/2019
  *  @version 1.0
