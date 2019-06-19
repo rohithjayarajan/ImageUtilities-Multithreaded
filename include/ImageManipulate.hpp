@@ -48,9 +48,9 @@
 #include <string>
 #include <thread>
 #include <vector>
-// OpenCV header
+// BOOST header
 #include <boost/range/irange.hpp>
-// user defined header
+// OpenCV header
 #include "opencv2/opencv.hpp"
 
 /**
